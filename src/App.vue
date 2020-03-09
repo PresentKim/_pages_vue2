@@ -23,7 +23,7 @@
 
     <v-app-bar app clipped-left dense collapse-on-scroll>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>Application</v-toolbar-title>
+        <v-toolbar-title>PresentKim Site</v-toolbar-title>
     </v-app-bar>
 
     <v-content>
