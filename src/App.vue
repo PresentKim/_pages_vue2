@@ -23,33 +23,12 @@
 
     <v-app-bar app clipped-left dense collapse-on-scroll>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <router-link class="router-anchor" to="/">
         <v-toolbar-title>PresentKim Site</v-toolbar-title>
+      </router-link>
     </v-app-bar>
 
-    <v-content>
-      <v-container class="fill-height" fluid>
-        <v-row align="center" justify="center">
-          <v-col class="shrink">
-            <v-tooltip right>
-              <template v-slot:activator="{ on }">
-                <v-btn :href="source" icon large target="_blank" v-on="on" >
-                  <v-icon large>mdi-code-tags</v-icon>
-                </v-btn>
-              </template>
-              <span>Source</span>
-            </v-tooltip>
-            <v-tooltip right>
-              <template v-slot:activator="{ on }">
-                <v-btn icon large href="https://codepen.io/johnjleider/pen/bXNzZL" target="_blank" v-on="on" >
-                  <v-icon>mdi-codepen</v-icon>
-                </v-btn>
-              </template>
-              <span>Codepen</span>
-            </v-tooltip>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-content>
+    <router-view></router-view>
 
     <v-footer app>
       <span>&copy; 2019</span>
@@ -72,3 +51,9 @@
     },
   }
 </script>
+
+<style lang="scss" scoped>
+  .router-link-active{
+    text-decoration: none;
+  }
+</style>
