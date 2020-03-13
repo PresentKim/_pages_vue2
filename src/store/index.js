@@ -5,11 +5,11 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
+    drawer: false
   },
   mutations: {
-  },
-  actions: {
-  },
-  modules: {
+    toggleDrawer(state) {
+      state.drawer = !state.drawer;
+    }
   }
 });

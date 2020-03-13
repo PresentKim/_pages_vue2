@@ -1,55 +1,23 @@
 <template>
   <v-app id="inspire">
-    <v-navigation-drawer v-model="drawer" app clipped temporary>
-      <v-list dense>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-view-dashboard</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Dashboard</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-settings</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Settings</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-
-    <v-app-bar app clipped-left dense collapse-on-scroll>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <router-link class="router-anchor" to="/">
-        <v-toolbar-title>PresentKim Site</v-toolbar-title>
-      </router-link>
-    </v-app-bar>
-
+    <AppBar />
+    <Navigation />
     <router-view></router-view>
   </v-app>
 </template>
 
 <script>
+  import AppBar from "@/components/AppBar.vue"
+  import Navigation from "@/components/Navigation.vue";
+
   export default {
-    props: {
-      source: String,
+    created () {
+      this.$vuetify.theme.dark = true;
     },
 
-    data: () => ({
-      drawer: null,
-    }),
-
-    created () {
-      this.$vuetify.theme.dark = true
+    components: {
+      Navigation,
+      AppBar
     },
   }
 </script>
-
-<style lang="scss" scoped>
-  .router-link-active{
-    text-decoration: none;
-  }
-</style>
