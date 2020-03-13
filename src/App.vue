@@ -29,10 +29,6 @@
     </v-app-bar>
 
     <router-view></router-view>
-
-    <v-footer app>
-      <span>&copy; 2019</span>
-    </v-footer>
   </v-app>
 </template>
 
