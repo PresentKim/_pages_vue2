@@ -4,11 +4,9 @@
             <v-row align="center" justify="center">
                 <v-col class="shrink">
                     <v-tooltip right>
-                        <template v-slot:activator="{ on }">
-                            <v-btn :href="source" icon large target="_blank" v-on="on" >
-                                <v-icon large>mdi-github</v-icon>
-                            </v-btn>
-                        </template>
+                        <v-btn :href="source" icon large target="_blank" v-on="on">
+                            <v-icon large>mdi-github</v-icon>
+                        </v-btn>
                         <span>Source</span>
                     </v-tooltip>
                 </v-col>
@@ -18,10 +16,10 @@
 </template>
 
 <script>
-export default {
-    name: "Home",
-    data: () => ({
-        source: "https://github.com/PresentKim/vue-site",
-    }),
-};
+    export default {
+        name: "Home",
+        data: () => ({
+            source: "https://github.com/PresentKim/vue-site",
+        }),
+    };
 </script>
