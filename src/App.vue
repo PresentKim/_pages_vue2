@@ -12,7 +12,8 @@
   
   export default {
     created() {
-      this.$vuetify.theme.dark = true;
+      this.$vuetify.theme.dark = this.$store.state.darkMode;
+      this.$store.subscribe((mutation, state) => this.$vuetify.theme.dark = state.darkMode);
     },
   
     components: {

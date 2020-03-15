@@ -4,6 +4,8 @@
         <router-link class="title-anchor" to="/">
             <v-toolbar-title>PresentKim Site</v-toolbar-title>
         </router-link>
+        <v-spacer></v-spacer>
+        <v-icon @click.stop="toggleTheme" v-html="themeIcon"></v-icon>
     </v-app-bar>
 </template>
 
@@ -11,9 +13,18 @@
     export default {
         name: "AppBar",
     
+        computed: {
+            themeIcon() {
+                return this.$store.state.darkMode ? 'mdi-weather-night' : 'mdi-weather-sunny';
+            }
+        },
+    
         methods: {
             toggleDrawer: function() {
                 this.$store.commit('toggleDrawer');
+            },
+            toggleTheme: function() {
+                this.$store.commit('toggleTheme');
             },
         }
     };
