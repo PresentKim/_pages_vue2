@@ -4,7 +4,7 @@
         <router-link class="title-anchor" to="/">
             <v-toolbar-title>PresentKim Site</v-toolbar-title>
         </router-link>
-        <v-spacer></v-spacer>
+        <v-spacer />
         <v-icon @click.stop="toggleTheme" v-html="themeIcon"></v-icon>
     </v-app-bar>
 </template>
