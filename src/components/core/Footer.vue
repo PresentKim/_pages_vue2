@@ -2,9 +2,9 @@
     <v-footer app>
         <span>&copy; 2017-2020</span>
         <v-spacer />
-        <v-icon large v-html="themeIcon" @click.stop="toggleTheme" ></v-icon>
-        <v-btn icon large :href="source" target="_blank">
-            <v-icon large>mdi-github</v-icon>
+        <v-icon v-html="themeIcon" @click.stop="toggleTheme"></v-icon>
+        <v-btn icon :href="source" target="_blank">
+            <v-icon>mdi-github</v-icon>
         </v-btn>
     </v-footer>
 </template>

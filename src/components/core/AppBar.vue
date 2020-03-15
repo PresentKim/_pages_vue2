@@ -4,7 +4,7 @@
         <v-toolbar-title>PresentKim Site</v-toolbar-title>
         <v-spacer />
         <router-link class="title-anchor" to="/">
-            <v-icon large>mdi-home</v-icon>
+            <v-icon>mdi-home</v-icon>
         </router-link>
     </v-app-bar>
 </template>
