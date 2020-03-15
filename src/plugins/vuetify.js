@@ -14,6 +14,15 @@ export default new Vuetify({
         error:      "#BF616A", //nord11
         warning:    "#EBCB8B", //nord13
         success:    "#A3BE8C", //nord14
+      },
+      light: {
+        primary:    "#2E3440", //nord0
+        info:       "#3B4252", //nord1
+        secondary:  "#434C5E", //nord2
+        accent:     "#88C0D0", //nord7
+        error:      "#BF616A", //nord11
+        warning:    "#EBCB8B", //nord13
+        success:    "#A3BE8C", //nord14
       }
     }
   }

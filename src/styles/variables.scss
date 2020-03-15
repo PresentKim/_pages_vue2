@@ -3,7 +3,6 @@ $material-dark: (
   'app-bar':            #3B4252, //nord1
   'navigation-drawer':  #3B4252, //nord1
   'surface':            #2E3440, //nord0
-  'bg-color':           #2E3440, //nord0
   'text': (
     'theme':            #ECEFF4, //nord6
     'primary':          #D8DEE9, //nord4
@@ -14,5 +13,23 @@ $material-dark: (
   'icons': (
     'active':           #ECEFF4, //nord6
     'inactive':         #E5E9F0, //nord5
+  ),
+);
+
+$material-light: (
+  'background':         #FFFFFF, //white
+  'app-bar':            #ECEFF4, //nord6
+  'navigation-drawer':  #ECEFF4, //nord6
+  'surface':            #ECEFF4, //nord6
+  'text': (
+    'theme':            #3B4252, //nord1
+    'primary':          #2E3440, //nord0
+    'secondary':        #434C5E, //nord2
+    'link':             #88C0D0, //nord7
+    'link-hover':       #81A1C1, //nord8
+  ),
+  'icons': (
+    'active':           #3B4252, //nord1
+    'inactive':         #4C566A, //nord3
   ),
 );
