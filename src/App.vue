@@ -17,6 +17,7 @@
     },
   
     created() {
+      this.$store.state.drawer = false;
       this.$vuetify.theme.dark = this.$store.state.darkMode;
       this.$store.subscribe((mutation, state) => this.$vuetify.theme.dark = state.darkMode);
     }
