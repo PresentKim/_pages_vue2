@@ -37,6 +37,6 @@
                     return this.$store.state.drawer = value;
                 }
             }
-        },
+        }
     };
 </script>

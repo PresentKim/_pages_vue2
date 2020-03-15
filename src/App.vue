@@ -11,14 +11,14 @@
   import Navigation from "@/components/Navigation.vue";
   
   export default {
-    created() {
-      this.$vuetify.theme.dark = this.$store.state.darkMode;
-      this.$store.subscribe((mutation, state) => this.$vuetify.theme.dark = state.darkMode);
-    },
-  
     components: {
       Navigation,
       AppBar
     },
+  
+    created() {
+      this.$vuetify.theme.dark = this.$store.state.darkMode;
+      this.$store.subscribe((mutation, state) => this.$vuetify.theme.dark = state.darkMode);
+    }
   }
 </script>

@@ -14,7 +14,7 @@ export default new Vuetify({
         error:      "#BF616A", //nord11
         warning:    "#EBCB8B", //nord13
         success:    "#A3BE8C", //nord14
-      },
-    },
-  },
+      }
+    }
+  }
 });

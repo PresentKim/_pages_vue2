@@ -20,6 +20,6 @@
         name: "Home",
         data: () => ({
             source: "https://github.com/PresentKim/vue-site",
-        }),
+        })
     };
 </script>

@@ -25,7 +25,7 @@
             },
             toggleTheme: function() {
                 this.$store.commit('toggleTheme');
-            },
+            }
         }
     };
 </script>
