@@ -23,7 +23,7 @@
 </template>
 
 <script>
-    import Footer from "@/components/Footer.vue";
+    import Footer from "@/components/core/Footer.vue";
     
     export default {
         name: "Navigation",

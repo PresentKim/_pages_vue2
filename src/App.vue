@@ -7,8 +7,8 @@
 </template>
 
 <script>
-  import AppBar from "@/components/AppBar.vue"
-  import Navigation from "@/components/Navigation.vue";
+  import AppBar from "@/components/core/AppBar.vue"
+  import Navigation from "@/components/core/Navigation.vue";
   
   export default {
     components: {
