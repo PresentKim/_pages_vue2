@@ -18,15 +18,19 @@
                 </v-list-item-content>
             </v-list-item>
         </v-list>
-        <v-footer app>
-            <span>&copy; 2019</span>
-        </v-footer>
+        <Footer />
     </v-navigation-drawer>
 </template>
 
 <script>
+    import Footer from "@/components/Footer.vue";
+    
     export default {
         name: "Navigation",
+    
+        components: {
+            Footer
+        },
     
         computed: {
             drawer: {
