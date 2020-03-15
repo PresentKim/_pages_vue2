@@ -1,8 +1,10 @@
 <template>
     <v-app-bar app clipped-left dense collapse-on-scroll>
         <v-app-bar-nav-icon @click.stop="toggleDrawer" />
+        <v-toolbar-title>PresentKim Site</v-toolbar-title>
+        <v-spacer />
         <router-link class="title-anchor" to="/">
-            <v-toolbar-title>PresentKim Site</v-toolbar-title>
+            <v-icon large>mdi-home</v-icon>
         </router-link>
     </v-app-bar>
 </template>
