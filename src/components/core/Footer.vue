@@ -1,11 +1,19 @@
 <template>
     <v-footer app>
-        <span>&copy; 2017-2020</span>
+        <v-btn :href="telegram" target="_blank">
+            <v-icon>mdi-telegram</v-icon>
+        </v-btn>
         <v-spacer />
-        <v-icon v-html="themeIcon" @click.stop="toggleTheme"></v-icon>
-        <v-btn icon :href="source" target="_blank">
+        <v-btn :href="github" target="_blank">
             <v-icon>mdi-github</v-icon>
         </v-btn>
+        <v-spacer />
+    
+        <br />
+    
+        <span>&copy; 2017-2020 PresentKim</span>
+        <v-spacer />
+        <v-icon v-html="themeIcon" @click.stop="toggleTheme" />
     </v-footer>
 </template>
 
@@ -14,7 +22,8 @@
         name: "Footer",
     
         data: () => ({
-            source: "https://github.com/PresentKim/vue-site",
+            github: "https://github.com/PresentKim/",
+            telegram: "https://t.me/PresentKim"
         }),
     
         computed: {
