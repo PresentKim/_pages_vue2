@@ -24,6 +24,14 @@
             <v-divider />
             <v-spacer />
             <v-subheader>Fun</v-subheader>
+            <v-list-item to="/fun/rotaterainbowball">
+                <v-list-item-action>
+                    <v-icon>mdi-rotate-left</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                    <v-list-item-title>RotateRainbowball</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
         </v-list>
         <Footer />
     </v-navigation-drawer>
