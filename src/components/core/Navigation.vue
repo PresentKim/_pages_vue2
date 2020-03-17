@@ -21,6 +21,14 @@
                     <v-list-item-title>Password Stength</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
+            <v-list-item to="/tools/svgpathtracer">
+                <v-list-item-action>
+                    <v-icon>mdi-ray-end</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                    <v-list-item-title>SVG Path Tracer</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
             <v-divider />
             <v-spacer />
             <v-subheader>Fun</v-subheader>
