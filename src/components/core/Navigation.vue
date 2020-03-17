@@ -13,6 +13,14 @@
             <v-divider />
             <v-spacer />
             <v-subheader>Tools</v-subheader>
+            <v-list-item to="/tools/skindataconverter">
+                <v-list-item-action>
+                    <v-icon>mdi-file-replace</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                    <v-list-item-title>Skindata Converter</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
             <v-list-item to="/tools/passwordstength">
                 <v-list-item-action>
                     <v-icon>mdi-textbox-lock</v-icon>

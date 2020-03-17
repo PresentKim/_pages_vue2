@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 const Home = () => import('@/components/core/Home.vue');
+const SkindataConverter = () => import('@/components/tools/SkindataConverter.vue');
 const PasswordStength = () => import('@/components/tools/PasswordStength.vue');
 const SVGPathTracer = () => import('@/components/tools/SVGPathTracer.vue');
 const RotateRainbowball = () => import('@/components/fun/RotateRainbowball.vue');
@@ -15,6 +16,11 @@ export default new VueRouter({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/tools/skindataconverter',
+      name: 'SkindataConverter',
+      component: SkindataConverter
     },
     {
       path: '/tools/passwordstength',
