@@ -1,7 +1,7 @@
 <template>
     <v-content id="RotateRainbowball">
         <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000">
-            <circle v-for="circle in circles" :cx="circle.x" :cy="circle.y" :r="circle.radius" :stroke="circle.color" stroke-width="5" fill="none"/>
+            <circle v-for="circle in circles" :key="circle" :cx="circle.x" :cy="circle.y" :r="circle.radius" :stroke="circle.color" stroke-width="5" fill="none"/>
             <circle v-for="ball in balls" :key="ball" :cx="ball.x" :cy="ball.y" :r="ball.radius" :fill="ball.color"/>
         </svg>
     </v-content>
