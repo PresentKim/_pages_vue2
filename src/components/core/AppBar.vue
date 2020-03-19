@@ -3,9 +3,9 @@
         <v-app-bar-nav-icon @click.stop="toggleDrawer" />
         <v-toolbar-title>PresentKim Site</v-toolbar-title>
         <v-spacer />
-        <router-link class="title-anchor" to="/">
+        <nuxt-link class="title-anchor" to="/">
             <v-icon>mdi-home</v-icon>
-        </router-link>
+        </nuxt-link>
     </v-app-bar>
 </template>
 
