@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-const Home = () => import('@/components/core/Home.vue');
-const SkindataConverter = () => import('@/components/tools/SkindataConverter.vue');
-const PasswordStength = () => import('@/components/tools/PasswordStength.vue');
-const SVGPathTracer = () => import('@/components/tools/SVGPathTracer.vue');
-const RotateRainbowball = () => import('@/components/fun/RotateRainbowball.vue');
+const Home = () => import('@/pages/Home.vue');
+const SkindataConverter = () => import('@/pages/tools/SkindataConverter.vue');
+const PasswordStength = () => import('@/pages/tools/PasswordStength.vue');
+const SVGPathTracer = () => import('@/pages/tools/SVGPathTracer.vue');
+const RotateRainbowball = () => import('@/pages/fun/RotateRainbowball.vue');
 
 Vue.use(VueRouter);
 
