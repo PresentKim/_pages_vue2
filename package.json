@@ -10,7 +10,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^3.6.4",
+    "core-js": "^2.5.7",
     "nord": "^0.2.1",
     "nuxt": "^2.12.0",
     "pngjs": "^3.4.0",
