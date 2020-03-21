@@ -1,11 +1,8 @@
 <template>
     <v-content id="SVGPathTracer">
-        <h1 id="test">Drop an <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d" target="_blank">SVG path definition</a> in the box</h1>
-    
-        <v-text-field label="Path definition:" v-model="definition" required/>
-    
-        <br/>
-    
+        <h3>Type an <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d" target="_blank">path definition</a></h3>
+        <v-text-field solo placeholder="i.e. M820,560 L620,460" v-model="definition" required/>
+        <v-divider /><br />
         <v-text-field :value="path.x" label="X:" readonly />
         <v-text-field :value="path.y" label="Y:" readonly />
     </v-content>
@@ -31,14 +28,8 @@
                     return this._definition;
                 },
                 set(value) {
-                    try {
-                        path.setAttribute('d', value);
-                    } catch {
-                        path.setAttribute('d', '');
-                    } finally {
-                        this._definition = value;
-                        this.path = path.getPointAtLength(Number.MAX_SAFE_INTEGER);
-                    }
+                    path.setAttribute('d', value);
+                    this.path = path.getPointAtLength(Number.MAX_SAFE_INTEGER);
                 }
             }
         },
