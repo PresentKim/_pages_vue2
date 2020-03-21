@@ -18,11 +18,12 @@
   
     created() {
       this.$store.state.drawer = false;
+      this.$store.state.title = "PresentKim Site";
       this.$vuetify.theme.dark = this.$store.state.darkMode;
       this.$store.subscribe((mutation, state) => this.$vuetify.theme.dark = state.darkMode);
   
       let notFoundPage = this.getQueryVariable('404');
-      if(notFoundPage){
+      if (notFoundPage) {
         this.$router.push(notFoundPage);
       }
     },

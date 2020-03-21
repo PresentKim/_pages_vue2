@@ -202,6 +202,10 @@
             this.circles[0].enable = true;
     
             this.requestAnimationFrame();
-        }
+        },
+    
+        created() {
+            this.$store.state.title = "Fun :: Rotate ball";
+        },
     }
 </script>

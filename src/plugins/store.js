@@ -7,7 +7,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     drawer: false,
-    darkMode: true
+    darkMode: true,
+    title: "PresentKim Site",
   },
   mutations: {
     toggleDrawer(state) {

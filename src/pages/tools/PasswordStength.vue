@@ -48,7 +48,11 @@
                 this.contains_uppercase = UPPERCASE.test(this.password);
                 this.contains_special_char = SPECIAL_CHAR.test(this.password);
             }
-        }
+        },
+    
+        created() {
+            this.$store.state.title = "Password strength";
+        },
     };
 </script>
 

@@ -18,7 +18,7 @@
         name: "SVGPathTracer",
     
         data: () => ({
-            _definition: "M820,560 L620,460",
+            _definition: "",
             path: {
                 x: 0,
                 y: 0
@@ -41,6 +41,10 @@
                     }
                 }
             }
-        }
+        },
+    
+        created() {
+            this.$store.state.title = "SVG :: Path tracer";
+        },
     };
 </script>

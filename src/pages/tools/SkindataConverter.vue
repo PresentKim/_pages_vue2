@@ -202,7 +202,11 @@
                 };
                 return map[length];
             }
-        }
+        },
+    
+        created() {
+            this.$store.state.title = "Skindataconveter";
+        },
     };
 </script>
 
