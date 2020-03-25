@@ -27,8 +27,19 @@
     };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     .title-anchor {
         text-decoration: none;
+    }
+    
+    .v-toolbar {
+        &--collapsed {
+            width: 32px !important;
+            height: 80px !important;
+            .v-toolbar__content {
+                padding: 4px 4px;
+                flex-flow: wrap;
+            }
+        }
     }
 </style>
