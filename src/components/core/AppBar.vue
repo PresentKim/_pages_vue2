@@ -35,7 +35,7 @@
     .v-toolbar {
         &--collapsed {
             width: 32px !important;
-            height: 80px !important;
+            height: 96px !important;
             .v-toolbar__content {
                 padding: 4px 4px;
                 flex-flow: wrap;
